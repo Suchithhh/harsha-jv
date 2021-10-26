@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Home</title>
+    <style>
+    .submit:hover {
+        background-color: #F9CF93;
+    }
+    h1 {
+      color:#52734D
+    }
+</style>
+</head>
+<body style = "background-color:#FEFFDE">
+<center>
+  <h1>Web Application For Object Identification</h1>
+</center>
+    <center><img src = "https://images.unsplash.com/photo-1550432163-9cb326104944?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1hY2hpbmUlMjBsZWFybmluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt = "ML_img" width="210px" height="180px"style = "position:relative; right:0px;top:50px;border-radius: 50%;"></center>
+    <div style = "position:relative; right:0px;top:100px;"><h1 style = "color:#52734D;"><center>This is image upload page</center></h1>
+
+    <form style = ""action="imageupload/imageprocess" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <center><input style = ""id="image" type="file" name="image"/>
+        <input class = "submit"type="submit" value="Submit"></center>
+    </form>
+</body>
+</html>
